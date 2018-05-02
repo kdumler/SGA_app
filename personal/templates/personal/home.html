@@ -1,0 +1,20 @@
+{% extends 'personal/new.html' %}
+
+{% block content %}
+
+<div class='container' align='center'>
+	<h1>Asset Form</h1>
+	<br>
+	<form method='post'>
+		{%csrf_token%}
+		{{form.as_p}}
+		<button type="submit">Submit</button>
+	</form>
+
+	<h2>{{title1}} {{body1}} {{date1}}</h2>
+
+</div>
+
+{% endblock %}
+
+
